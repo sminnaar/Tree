@@ -6,7 +6,7 @@
 /*   By: tcajee <tcajee@student.wethinkcode.co.za>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/15 14:36:21 by tcajee            #+#    #+#             */
-/*   Updated: 2019/07/24 16:11:01 by sminnaar         ###   ########.fr       */
+/*   Updated: 2019/07/24 16:27:32 by sminnaar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,22 @@ typedef enum e_flags
 } 				t_flags;
 
 
-void			ft_print_flags(unsigned char c);
-void			ft_ls_open(char *path);
+
+
+//void			ft_sorts();
+//void			ft_cleans;
+
 int				ft_ls(int argc, char **argv);
-int				ft_errors(int ERROR);
+
 int				ft_flags(char **argv, t_flags *flags);
 void 			ft_set_flags(char *arg, t_flags *flags);
 void			ft_check_flags(size_t flag, t_flags *flags);
+
+void			ft_print_flags(unsigned char c);
+void			ft_ls_open(char *path);
+
+
+int				ft_errors(int ERROR);
 int				ft_dirs(int argc, char **argv);
 int				ft_isdir(char *name);
 int				ft_prints(int i, char **argv);

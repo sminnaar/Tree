@@ -6,7 +6,7 @@
 /*   By: tcajee <tcajee@student.wethinkcode.co.za>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/29 13:13:54 by tcajee            #+#    #+#             */
-/*   Updated: 2019/07/24 16:02:22 by sminnaar         ###   ########.fr       */
+/*   Updated: 2019/07/24 16:22:11 by sminnaar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ int ft_ls(int argc, char **argv)
 	// handle dirs
 	if (i < argc)
 		i = ft_dirs(argc, argv + i);
-	// handle printing
 	// handle memory
+	// handle printing
+	// handle errors
 	return (i);
 }
 
