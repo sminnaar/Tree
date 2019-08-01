@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_ls.h"
+#include "../libft/incs/libft.h"
 
 int		ft_isdir(char *name)
 {
 	struct stat *s;
 
 	s = NULL;
-	if ((lstat(name, s)) != -1)
+	if ((fstat(name, s)) != -1)
 	{
 		perror("lstat: ");
 		return (0);
